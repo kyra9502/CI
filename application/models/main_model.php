@@ -1,20 +1,26 @@
 <?php
-//ex avec un formulaire
+// database operation function write here
+
+defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Main_model extends CI_Model{
-	//non utlisé
-	function test_main(){
-		echo "This is a model function";
-	}
-	//non utilisé
-	function insert_data($data){
-		$this->db->insert("user",$data);
+
+
+	//Insert table user
+	public function insert_data($data){
+		//INSERT into user (username, password, email) VALUES(?,?,?);
+		$this->db->insert("user", $data);
 	}
 
-	function fetch_data(){
-		$query = $this->db->get("user");
-		//select * from user
+	public function fetch_data(){
+		// SELECT * From user
+		//$query = $this->db->get("user");
+
+		// sql précision
+		$query = $this->db->query("SELECT * FROM user ORDER BY id DESC");
 		return $query;
 	}
-
 }
+
+
+
