@@ -7,9 +7,11 @@ class Main extends CI_Controller {
 
 	public function index(){
 	// include 
+		$this->load->view("pages/header");
 		$this->load->model("main_model");
 		$data["fetch_data"] = $this->main_model->fetch_data();
-		$this->load->view("main_view", $data);
+		$this->load->view("index", $data);
+		$this->load->view("pages/footer");
 	}
 	
 	// importation form validation library

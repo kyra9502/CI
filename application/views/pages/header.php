@@ -11,7 +11,9 @@
   <meta name="keywords" content="Pingendo conference event neon free template bootstrap 4">
   <!-- CSS dependencies -->
   <link rel="stylesheet" href="<?php echo base_url('assets/css/neon.css')?> ">
+  <link rel="stylesheet" href="<?php echo base_url('assets/css/neon.css')?> ">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="'https://fonts.googleapis.com/css?family=Montserrat:200">
   <!-- Script: Make my navbar transparent when the document is scrolled to top -->
   <script src="<?php echo base_url('assets/js/navbar-ontop.js')?>"></script>
   <!-- Script: Animated entrance -->
