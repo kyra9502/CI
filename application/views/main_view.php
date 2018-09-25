@@ -39,10 +39,33 @@
                 <table class=" table table-reponsive">
                     <tr>
                         <th>ID</th>
-                        <th>username</th>
-                        <th>password</th>
-                        <th>email</th>
-                    </tr>   
+                        <th>Username</th>
+                        <th>Password</th>
+                        <th>Email</th>
+                    </tr>  
+                    <?php 
+                        if($fetch_data->num_rows() > 0){
+
+                            foreach($fetch_data->result() as $row){
+                    ?>
+                             <tr>
+                                <td><?php echo $row->id; ?></td>
+                                <td><?php echo $row->username; ?></td>
+                                <td><?php echo $row->password; ?></td>
+                                <td><?php echo $row->email; ?></td>
+                             </tr>   
+                    <?php
+                            }
+
+                        } else{
+                    ?>
+                            <tr>
+                                <td colspan="3">No Data Found</td>
+                            </tr>
+                    <?php        
+
+                        }
+                    ?>
                 </table>
             </div>
             

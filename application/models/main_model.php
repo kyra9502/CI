@@ -12,7 +12,14 @@ class Main_model extends CI_Model{
 		$this->db->insert("user", $data);
 	}
 
-	
+	public function fetch_data(){
+		// SELECT * From user
+		//$query = $this->db->get("user");
+
+		// sql précision
+		$query = $this->db->query("SELECT * FROM user ORDER BY id DESC");
+		return $query;
+	}
 }
 
 
