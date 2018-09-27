@@ -37,7 +37,7 @@
             <a class="nav-link" href="#tricks">Tricks</a>
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link" href="<?= site_url('detail_trick'); ?>">Créer un trick</a>
+            <a class="nav-link" href="<?= site_url('new_trick'); ?>">Créer un trick</a>
           </li>
           </ul>
         <a class="btn navbar-btn mx-2 btn-outline-primary" href="#register">Sign in</a>
