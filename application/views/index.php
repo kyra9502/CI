@@ -1,3 +1,4 @@
+
 <!-- Cover -->
         <div class="d-flex align-items-center py-5 cover section-fade-in-out" style="background-image: url(&quot;assets/img/cover.jpg&quot;);">
           <div class="container">
