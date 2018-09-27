@@ -31,10 +31,13 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbar2SupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item mx-2 text-white">
-            <a class="nav-link" href="#">Accueil</a>
+            <a class="nav-link" href="<?= site_url(''); ?>">Accueil</a>
           </li>
           <li class="nav-item mx-2">
             <a class="nav-link" href="#tricks">Tricks</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="<?= site_url('detail_trick'); ?>">Créer un trick</a>
           </li>
           </ul>
         <a class="btn navbar-btn mx-2 btn-outline-primary" href="#register">Sign in</a>
