@@ -23,7 +23,7 @@
 
 <body class="text-center" >
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark ">
     <div class="container">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -34,7 +34,7 @@
             <a class="nav-link" href="<?= site_url(''); ?>">Accueil</a>
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link" href="#tricks">Tricks</a>
+            <a class="nav-link" href="<?= site_url('#tricks'); ?>">Tricks</a>
           </li>
           <li class="nav-item mx-2">
             <a class="nav-link" href="<?= site_url('new_trick'); ?>">Créer un trick</a>

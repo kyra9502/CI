@@ -12,7 +12,7 @@ class detailtrick_model extends CI_Model{
 		//$query = $this->db->get("user");
 
 		// sql précision
-		$query = $this->db->query("SELECT name, picture FROM tricks ORDER BY name DESC");
+		$query = $this->db->query("SELECT id, user_id, title, content, edit_author, image, DATE_FORMAT(post_date, '%d-%m-%Y ') AS post_date  FROM post WHERE id = ?");
 		return $query;
 	}
 }
