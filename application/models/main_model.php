@@ -17,7 +17,7 @@ class Main_model extends CI_Model{
 		//$query = $this->db->get("user");
 
 		// sql précision
-		$query = $this->db->query("SELECT * FROM user ORDER BY id DESC");
+		$query = $this->db->query("SELECT name, picture FROM tricks ORDER BY name DESC");
 		return $query;
 	}
 }
